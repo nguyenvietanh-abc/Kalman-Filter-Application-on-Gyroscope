@@ -1,0 +1,25 @@
+# --- ESP-IDF ---
+build/
+# sdkconfig sinh ra tu sdkconfig.defaults, khac nhau theo may/phien ban IDF
+sdkconfig
+sdkconfig.old
+managed_components/
+dependencies.lock
+
+# --- host_test: san pham bien dich va du lieu sinh ra ---
+host_test/*.o
+host_test/test_kalman
+host_test/test_convention
+host_test/run.log
+# CSV tai lap duoc: make run sinh lai y het (PRNG seed co dinh)
+host_test/*.csv
+
+# Do thi: khong commit anh sinh ra, TRU hai anh duoc README nhung vao -
+# nguoi doc repo tren GitHub can chung de README hien dung.
+host_test/*.png
+!host_test/out.png
+!host_test/out_bias.png
+
+# --- tools ---
+tools/.venv/
+tools/__pycache__/

@@ -1,0 +1,3 @@
+# Chi dung cho phan ve do thi tren PC. Firmware KHONG phu thuoc gi vao day.
+matplotlib>=3.5
+pyserial>=3.5
